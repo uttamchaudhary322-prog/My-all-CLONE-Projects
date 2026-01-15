@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bg {
+    width: 1600px;
+    height: 960px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(15, 15, 15, 1), rgba(25, 25, 25, 1), rgba(40, 40, 40, 1));
+}
+
+/* nav {
+        height: 100px;
+    } */
+
+
+.container {
+    width: 1600px;
+    height: 960px;
+    display: flex;
+
+}
+
+/* ----------------SIDE VERTICAL BAR------------------- */
+
+.lo-style {
+    height: 960px;
+    width: 136px;
+    background: #919FA9;
+
+}
+.logo {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 13px;
+}
+#side {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Barlow Condensed", system-ui;
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 120px;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    letter-spacing: 30px;
+}
+
+/*-----------------MID TEXT SECTION BAR----------------- */
+
+.he-pr-de-ac {
+    height: 960px;
+    width: 551px;
+    color: #ffffff;
+}
+
+#air-max {
+    font-size: 120px;
+    font-weight: 500;
+    font-family: "Bangers", system-ui;
+    text-transform: uppercase;
+    position: absolute;
+    left: 220px;
+    top: 200px;
+    letter-spacing: 4px;
+    z-index: 4;
+}
+
+#module {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Barlow", system-ui;
+    text-transform: uppercase;
+    position: absolute;
+    left: 220px;
+    top: 310px;
+    letter-spacing: 2px;
+    z-index: 4;
+}
+
+#price {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Barlow Condensed", system-ui;
+    text-transform: uppercase;
+    position: absolute;
+    left: 220px;
+    top: 380px;
+    letter-spacing: 2px;
+    z-index: 4;
+}
+
+#description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22.5px;
+    font-weight: 150;
+    font-family: "Balthazar", system-ui;
+    width: 440px;
+    position: absolute;
+    left: 220px;
+    top: 480px;
+    line-height: 28px;
+    z-index: 4;
+}
+
+#button {
+    position: absolute;
+    left: 220px;
+    top: 700px;
+    width: 200px;
+    height: 66px;
+    background-color: #919FA9;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Barlow Condensed", system-ui;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 0px rgba(100, 100, 100, 0.8));
+    z-index: 4;
+}
+
+/*---------------SHOES IMAGE SECTION------------- */
+.sh-im {
+    width: 913px;
+}
+
+.shoe_img {
+    max-width: 990px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 480px;
+    transform: rotate(-20deg);
+    filter: brightness(150px);
+    filter: contrast(150px);
+    z-index: 2;
+}
+
+.shadow {
+    width: 700px;
+    height: 100px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(40, 40, 40, 0));
+    position: absolute;
+    top: 780px;
+    left: 620px;
+    filter: blur(20px);
+    border-radius: 50%;
+}
+
+.circle_1 {
+    width: 200px;
+    height: 200px;
+    background: rgba(155, 155, 155, 0.15);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 3px solid linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(40, 40, 40, 1));
+    position: absolute;
+    top: 620px;
+    left: 800px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.circle_2 {
+    width: 200px;
+    height: 200px;
+    background: rgba(155, 155, 155, 0.15);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 3px solid linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(40, 40, 40, 1));
+    position: absolute;
+    top: 350px;
+    left: 1330px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.circle_3 {
+    width: 370px;
+    height: 370px;
+    background: rgba(155, 155, 155, 0.15);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 3px solid linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(40, 40, 40, 1));
+    position: absolute;
+    top: 120px;
+    left: 640px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle_4 {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0));
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    filter: blur(100px);
+    border-radius: 50%;
+}
+
+.circle_5 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0));
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    filter: blur(100px);
+    border-radius: 50%;
+}
+
+.circle_6 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0));
+    position: absolute;
+    top: 700px;
+    left: 800px;
+    filter: blur(100px);
+    border-radius: 50%;
+}
