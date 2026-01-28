@@ -1,0 +1,629 @@
+:root {
+    --heading-font: "inter", Arial, Helvetica, sans-serif;
+    --btn-color: rgba(255, 255, 255, 1);
+    --btn-bg-color: rgb(231, 0, 0);
+    --btn-bg-hover-color: rgb(203, 4, 4);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--heading-font);
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.main .container {
+    width: 100%;
+    height: 45rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.8) url("image/bg-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main .container .nav {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.main .container .nav nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 10%;
+    position: relative;
+
+}
+
+.main .container .nav nav span img {
+    max-width: 9.5rem;
+    height: auto;
+    position: relative;
+}
+
+.container .nav nav .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.container .nav nav .button a:nth-child(1) {
+    color: var(--btn-color);
+    font-family: var(--heading-font);
+    text-decoration: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 8px 20px;
+    font-size: 15px;
+    cursor: context-menu;
+    position: relative;
+}
+
+.container .nav nav .button a:nth-child(2) {
+    color: var(--btn-color);
+    font-family: var(--heading-font);
+    text-decoration: none;
+    background: var(--btn-bg-color);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container .nav nav .button a:nth-child(2):hover {
+    color: var(--btn-color);
+    font-family: var(--heading-font);
+    text-decoration: none;
+    background: var(--btn-bg-hover-color);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    padding: 8px 15px;
+    font-weight: 500;
+}
+
+.main-head {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.main-head .light-head {
+    position: absolute;
+    text-align: center;
+    color: var(--btn-color);
+    margin: auto;
+}
+
+.main-head .light-head h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: var(--heading-font);
+    color: var(--btn-color);
+    margin: 1.3rem auto;
+    max-width: 30rem;
+}
+
+.main-head .light-head p {
+    color: var(--btn-color);
+    font-size: 1.4rem;
+    font-family: var(--heading-font);
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+}
+
+.main-head .light-head .log {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.mid-body .light-mid .log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-head .light-head .log h3,
+.mid-body .light-mid .log h3 {
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    color: var(--btn-color);
+    margin-bottom: 1.3rem;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.main-head .light-head .log .mail,
+.mid-body .light-mid .log .mail {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-head .light-head .log .mail span,
+.mid-body .light-mid .log .mail span {
+    margin: 3px;
+}
+
+.main-head .light-head .log .mail span:nth-child(1) {
+    width: 22rem;
+    position: relative;
+}
+
+.mid-body .light-mid .log .mail span:nth-child(1) {
+    width: 35rem;
+    position: relative;
+}
+
+.main-head .light-head .log .mail input,
+.mid-body .light-mid .log .mail input {
+    height: 3.3rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    color: var(--btn-color);
+    padding: 2px 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-head .light-head .log .mail input::placeholder,
+.mid-body .light-mid .log .mail input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-head .light-head .log .mail a,
+.mid-body .light-mid .log .mail a {
+    text-decoration: none;
+    color: var(--btn-color);
+    background: var(--btn-bg-color);
+    position: relative;
+    top: 0.8rem;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+.main-head .light-head .log .mail a img,
+.mid-body .light-mid .log .mail a img {
+    height: 1.2rem;
+    width: auto;
+}
+
+.main-head .light-head .log .mail a:hover,
+.mid-body .light-mid .log .mail a:hover {
+    text-decoration: none;
+    color: var(--btn-color);
+    background: var(--btn-bg-hover-color);
+    position: relative;
+    top: 0.8rem;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.mid-body {
+    position: relative;
+}
+
+.mid-body::before {
+    content: "";
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(255, 0, 0, 1), rgba(0, 0, 0, 0.9));
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.mid-body {
+    background: radial-gradient(ellipse 200% 20% at top center, rgb(15, 33, 99), rgb(0, 2, 14), rgb(0, 2, 14), rgb(0, 2, 14), rgb(0, 2, 14));
+    width: 100%;
+    height: auto;
+    padding: 1rem 8%;
+    color: white;
+}
+
+.mid-body .light-mid {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin: auto;
+}
+
+.mid-body .light-mid h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.mid-body .light-mid .trending-flex {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    margin: 0 2rem 4rem 2rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mid-body .light-mid .trending-flex::-webkit-scrollbar {
+    display: none;
+}
+
+.mid-body .light-mid .trending-flex img {
+    border-radius: 10px;
+    width: 11rem;
+    height: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mid-body .light-mid .trending-flex img:hover {
+    border-radius: 10px;
+    width: 11rem;
+    height: auto;
+    position: relative;
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+#scroll-left {
+    height: 9rem;
+    width: 1.8rem;
+    background: rgb(53, 53, 53, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: auto;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    transition: all 0.3s ease;
+}
+
+#scroll-left::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll-right {
+    height: 9rem;
+    width: 1.8rem;
+    background: rgb(53, 53, 53, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: auto;
+    right: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    transition: all 0.3s ease;
+}
+
+#scroll-left img {
+    height: 2rem;
+    width: auto;
+    rotate: 180deg;
+    position: relative;
+    left: 0;
+    top: 3.5rem;
+}
+
+#scroll-right img {
+    height: 2rem;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 3.5rem;
+}
+
+.over-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.over-cover .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.over-cover .cover .boxes {
+    width: 19rem;
+    min-height: 19rem;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(to left top, rgba(138, 50, 30, 0.3), rgba(59, 103, 193, 0.3));
+    margin: 0.5rem;
+}
+
+.over-cover .cover .boxes h3 {
+    font-family: var(--heading-font);
+    font-size: 25px;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.over-cover .cover .boxes p {
+    font-family: var(--heading-font);
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.over-cover .cover .boxes .svg-img {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.over-cover .cover .boxes:nth-child(1) .svg-img svg,
+.over-cover .cover .boxes:nth-child(3) .svg-img svg {
+    position: relative;
+    right: 0;
+    bottom: -3.5rem;
+}
+
+.over-cover .cover .boxes:nth-child(2) .svg-img svg,
+.over-cover .cover .boxes:nth-child(4) .svg-img svg {
+    position: relative;
+    right: 0;
+    bottom: -1rem;
+}
+
+.mid-body .light-mid #js {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.mid-body .light-mid #js .common {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.mid-body .light-mid #js .common h3 {
+    background: rgb(45, 45, 45);
+    height: auto;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mid-body .light-mid #js .common h3 span img {
+    height: 35px;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mid-body .light-mid #js .common h3:hover {
+    background: rgb(60, 60, 60);
+    height: auto;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mid-body .light-mid #js .common p {
+    background: rgb(45, 45, 45);
+    height: auto;
+    width: 100%;
+    padding: 0rem;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 1px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease;
+    will-change: max-height;
+}
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .over-cover .cover .boxes {
+        width: 19rem;
+        min-height: 22rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1160px) {
+
+    .main-head .light-head .log .mail a,
+    .mid-body .light-mid .log .mail a {
+        top: 0.8rem;
+        padding: 0.8rem 2rem;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .main-head .light-head .log .mail a img,
+    .mid-body .light-mid .log .mail a img {
+        position: relative;
+        top: 3px;
+    }
+
+    .main-head .light-head .log .mail a:hover,
+    .mid-body .light-mid .log .mail a:hover {
+        top: 0.8rem;
+        padding: 0.8rem 2rem;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .mid-body .light-mid .trending-flex {
+        gap: 1.5rem;
+        margin: 0 2rem 4rem 2rem;
+        padding: 1rem;
+    }
+
+    .mid-body .light-mid .trending-flex img {
+        border-radius: 9px;
+        width: 9rem;
+        height: auto;
+    }
+
+    .mid-body .light-mid .trending-flex img:hover {
+        border-radius: 9px;
+        width: 9rem;
+        height: auto;
+    }
+
+    .over-cover .cover {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .over-cover .cover .boxes {
+        width: 45%;
+        min-height: 17rem;
+    }
+
+    .over-cover .cover .boxes h3 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .main-head .light-head h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+    .main-head .light-head .log .mail span:nth-child(1) {
+        width: 85%;
+        position: relative;
+    }
+
+    .mid-body .light-mid .log .mail span:nth-child(1) {
+        width: 90%;
+        position: relative;
+    }
+
+    .main .container .nav nav span img {
+        max-width: 6rem;
+        height: auto;
+        position: relative;
+    }
+
+    .mid-body .light-mid .trending-flex {
+        gap: 1rem;
+        margin: 0 2rem 4rem 2rem;
+        padding: 1rem;
+    }
+
+    .mid-body .light-mid .trending-flex img {
+        border-radius: 7px;
+        width: 7rem;
+        height: auto;
+    }
+
+    .mid-body .light-mid .trending-flex img:hover {
+        border-radius: 7px;
+        width: 7rem;
+        height: auto;
+    }
+
+    .over-cover .cover {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .over-cover .cover .boxes {
+        width: 100%;
+        min-height: 15rem;
+    }
+
+    .over-cover .cover .boxes:nth-child(1) .svg-img svg,
+    .over-cover .cover .boxes:nth-child(3) .svg-img svg {
+        position: relative;
+        right: 0;
+        bottom: -1.5rem;
+    }
+
+    .over-cover .cover .boxes h3 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .over-cover .cover .boxes .svg-img svg {
+        width: 3.8rem;
+        height: auto;
+    }
+}
